@@ -1,5 +1,5 @@
-import { useState } from "react";
-import { ThreeDots } from "react-loader-spinner";
+import { useState } from 'react';
+import { ThreeDots } from 'react-loader-spinner';
 import {
   Avatar,
   AvatarFrame,
@@ -9,12 +9,12 @@ import {
   Card,
   Header,
   Stats,
-} from "./UserCard.styled";
+} from './UserCard.styled';
 
 export default function UserCard({ user, handleFollow, followings }) {
-  const { id, user: userName, tweets, followers, avatar } = user;
+  const { id, tweets, followers, avatar } = user;
   const [isLoading, setIsLoading] = useState(false);
-  const isFollowed = followings.find((user) => user === id);
+  const isFollowed = followings.find(user => user === id);
 
   async function handleClick() {
     try {
@@ -36,22 +36,23 @@ export default function UserCard({ user, handleFollow, followings }) {
         </AvatarFrame>
         {/* <h2>{userName}</h2> */}
         <Stats>
-          {tweets.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")} Tweets
+          {tweets.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')} Tweets
         </Stats>
         <Stats>
-          {followers.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")} Followers
+          {followers.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')} Followers
         </Stats>
         <Button
           type="button"
           onClick={handleClick}
           disabled={isLoading}
-          followed={isFollowed}>
+          followed={isFollowed}
+        >
           {isLoading ? (
             <ThreeDots height="10" color="#5736a3" />
           ) : isFollowed ? (
-            "Following"
+            'Following'
           ) : (
-            "Follow"
+            'Follow'
           )}
         </Button>
       </Body>
