@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/goit-test-tweet/static/css/main.b8a60e07.css",
+    "main.js": "/goit-test-tweet/static/js/main.5d230fd2.js",
+    "index.html": "/goit-test-tweet/index.html",
+    "main.b8a60e07.css.map": "/goit-test-tweet/static/css/main.b8a60e07.css.map",
+    "main.5d230fd2.js.map": "/goit-test-tweet/static/js/main.5d230fd2.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b8a60e07.css",
+    "static/js/main.5d230fd2.js"
+  ]
+}
