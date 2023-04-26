@@ -12,7 +12,7 @@ import {
 } from './UserCard.styled';
 
 export default function UserCard({ user, handleFollow, followings }) {
-  const { id, tweets, followers, avatar } = user;
+  const { id, user: userName, tweets, followers, avatar } = user;
   const [isLoading, setIsLoading] = useState(false);
   const isFollowed = followings.find(user => user === id);
 
@@ -32,7 +32,7 @@ export default function UserCard({ user, handleFollow, followings }) {
       <Border />
       <Body>
         <AvatarFrame>
-          <Avatar src={avatar} />
+          <Avatar src={avatar} alt="{userName}'s photo"/>
         </AvatarFrame>
         {/* <h2>{userName}</h2> */}
         <Stats>
