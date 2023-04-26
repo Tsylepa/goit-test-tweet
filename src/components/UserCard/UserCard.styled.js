@@ -1,4 +1,6 @@
 import styled from 'styled-components';
+import logo from 'images/logo.png';
+import cardHeader from 'images/card-header.png';
 
 export const Card = styled.li`
   display: flex;
@@ -22,8 +24,7 @@ export const Card = styled.li`
 
 export const Header = styled.div`
   height: 214px;
-  background: url('src/images/logo.png') top 20px left 20px,
-    url('card-header.png') center;
+  background: url(${logo}) top 20px left 20px, url(${cardHeader}) center;
   background-repeat: no-repeat;
 `;
 

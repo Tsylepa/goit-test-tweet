@@ -36,7 +36,8 @@ function TweetsPage() {
       setFilteredUsers(response);
     }
     filterUsers();
-  }, [filter, followings, users]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [filter]);
 
   useEffect(() => {
     setFilteredUsers(users);
@@ -63,7 +64,8 @@ function TweetsPage() {
       }
     }
     fetchUsers();
-  }, [page, users]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [page]);
 
   async function handleFollow(id) {
     const userIdx = followings.indexOf(id);
