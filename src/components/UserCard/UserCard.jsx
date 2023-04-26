@@ -32,7 +32,7 @@ export default function UserCard({ user, handleFollow, followings }) {
       <Border />
       <Body>
         <AvatarFrame>
-          <Avatar src={avatar} alt="{userName}'s photo"/>
+          <Avatar src={avatar} alt={userName+" photo"}/>
         </AvatarFrame>
         {/* <h2>{userName}</h2> */}
         <Stats>
