@@ -1,16 +1,21 @@
-export const App = () => {
+import './App.css';
+import { Route, Routes } from 'react-router-dom';
+import HomePage from 'pages/HomePage/';
+import TweetsPage from 'pages/TweetsPage';
+import { Layout } from 'Layout';
+
+function App() {
   return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101'
-      }}
-    >
-      React homework template
-    </div>
+    <>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route exact index path="/" element={<HomePage />} />
+          <Route exact path="/tweets" element={<TweetsPage />} />
+          <Route path="*" element={<HomePage />} />
+        </Route>
+      </Routes>
+    </>
   );
-};
+}
+
+export default App;
