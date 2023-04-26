@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/goit-test-tweet/static/css/main.b8a60e07.css",
-    "main.js": "/goit-test-tweet/static/js/main.a5e14279.js",
+    "main.js": "/goit-test-tweet/static/js/main.aa37d25e.js",
     "static/media/card-header.png": "/goit-test-tweet/static/media/card-header.032662a2a907475127d7.png",
     "index.html": "/goit-test-tweet/index.html",
     "main.b8a60e07.css.map": "/goit-test-tweet/static/css/main.b8a60e07.css.map",
-    "main.a5e14279.js.map": "/goit-test-tweet/static/js/main.a5e14279.js.map"
+    "main.aa37d25e.js.map": "/goit-test-tweet/static/js/main.aa37d25e.js.map"
   },
   "entrypoints": [
     "static/css/main.b8a60e07.css",
-    "static/js/main.a5e14279.js"
+    "static/js/main.aa37d25e.js"
   ]
 }
